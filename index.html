@@ -35,13 +35,18 @@
         font-family: "Ubuntu", sans-serif;
         height: 100vh;
         background-color: #f2f5fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       .main-window {
-        height: 300px;
-        width: 200px;
-        justify-content: center;
-        align-items: center;
+        height: 520px;
+        width: 415px;
+        background-color: #ffffff;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        border-radius: 12px;
+        overflow: hidden;
       }
 
       .author-info {
@@ -55,6 +60,46 @@
         color: rgb(55, 65, 81);
         text-decoration: underline;
       }
+
+      .hero-image {
+        width: 100%;
+        height: 220px; /* choose a fixed height */
+        object-fit: cover;
+        display: block;
+        object-fit: cover;
+      }
+
+      .hero-container {
+        position: relative;
+      }
+
+      .overlay {
+        position: absolute;
+        bottom: -1px;
+        display: block;
+      }
+
+      .title {
+        padding-left: 30px;
+        font-weight: 420;
+        font-size: 27px;
+        line-height: 1.5;
+      }
+
+      .description {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 20px;
+        font-size: 14px;
+        color: rgb(108, 108, 108);
+        line-height: 1.5;
+      }
+
+      hr {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+
     </style>
   </head>
   <body>
@@ -67,14 +112,28 @@
     Customer Manger, Solution Oy
    -->
     <div class="main-window">
-      <img src="resources/hero-image.webp" alt="Hero Image">
-      <img src="resources/white-overlay.svg" alt="White Background">
+      <div class="hero-container">
+        <img src="resources/hero-image-1.webp" class="hero-image" alt="" />
+        <img src="resources/white-overlay.svg" class="overlay" alt="" />
+      </div>
+
       <h1 class="title">Perfect solution for small business</h1>
-      <p class="description">Small businesses need to generate leads to grow. You can use tools like Ringy.</p>
-      <hr>
-      <img src="resources/avatar-image-business-card.webp" alt="Avatar Image">
-      <h2 class="avatar-name">Amy Burgess</h2>
-      <p class="avatar-details">Customer Manger, Solution Oy</p>
+      <p class="description">
+        Small businesses need to generate leads to grow. You can use tools like
+        Ringy.
+      </p>
+
+      <div class="author">
+        <img
+          src="resources/avatar-image-business-card.webp"
+          class="avatar"
+          alt=""
+        />
+        <div>
+          <h2 class="avatar-name">Amy Burgess</h2>
+          <p class="avatar-details">Customer Manager, Solution Oy</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
