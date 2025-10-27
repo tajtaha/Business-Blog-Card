@@ -41,7 +41,7 @@
       }
 
       .main-window {
-        height: 520px;
+        height: 470px;
         width: 415px;
         background-color: #ffffff;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
@@ -96,8 +96,42 @@
       }
 
       hr {
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: #f2f5fa solid 1px;
+      }
+
+      .author {
+        display: flex;
+        padding-left: 40px;
+        gap: 12px;
+      }
+
+      .avatar-container {
+        display: flex;
+        border-radius: 100px;
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        border: #f1f5f8 solid 5px;
+      }
+
+      .avatar {
+        width: 100%;
+        height: 100%;
+      }
+
+      .avatar-name {
+        margin-right: 20px;
+        font-weight: 500;
+        font-size: 15px;
+      }
+
+      .avatar-details {
+        font-weight: 400;
+        font-size: 12px;
       }
 
     </style>
@@ -122,13 +156,17 @@
         Small businesses need to generate leads to grow. You can use tools like
         Ringy.
       </p>
+      
+      <hr>
 
       <div class="author">
-        <img
-          src="resources/avatar-image-business-card.webp"
-          class="avatar"
-          alt=""
-        />
+        <div class="avatar-container">
+          <img
+            src="resources/avatar-image-business-card.webp"
+            class="avatar"
+            alt=""
+          />
+        </div>
         <div>
           <h2 class="avatar-name">Amy Burgess</h2>
           <p class="avatar-details">Customer Manager, Solution Oy</p>
